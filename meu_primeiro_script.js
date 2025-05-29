@@ -1,1 +1,4 @@
-alert("Hello World!!!")
+//alert("Hello World!!!");
+
+mensagem = "Hello World!!!";
+alert(mensagem);
