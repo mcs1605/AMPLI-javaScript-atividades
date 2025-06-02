@@ -8,6 +8,9 @@ function primeiraEtapa (acertos_na_prova, semestres_cursados){
     if((nota >= nota_minima_aprovacao) && (semestres_cursados >= minimo_semestres)){
     return "Aprovado";
     }
+    else if(nota >= nota_minima_aprovacao){
+        return "Você foi incluído em nosso banco de currículos";
+    }
     else{
     return "Reprovado";
     }
