@@ -16,5 +16,9 @@ function primeiraEtapa (acertos_na_prova, semestres_cursados){
     }
 }
 
+function horarioEntrevista (){
+    for
+}
+
 //exemplo
 console.log(primeiraEtapa(18,2));
