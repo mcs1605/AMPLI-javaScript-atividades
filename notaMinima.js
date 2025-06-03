@@ -16,8 +16,12 @@ function primeiraEtapa (acertos_na_prova, semestres_cursados){
     }
 }
 
+//9h da manhã às 17h da tarde
 function horarioEntrevista (){
-    for
+    for(i = 1, i <= 12, i = i + 1){
+        console.log(i, "Entrevista {i}")
+
+    }
 }
 
 //exemplo
