@@ -16,13 +16,27 @@ function primeiraEtapa (acertos_na_prova, semestres_cursados){
     }
 }
 
-//9h da manhã às 17h da tarde
-function horarioEntrevista (){
-    for(i = 1, i <= 12, i = i + 1){
-        console.log(i, "Entrevista {i}")
+//9h da manhã às 17h da tarde - ENTREVISTAS
 
+var entrada = 9;
+var minutos = 15;
+var total_entrevistas = 0;
+const saida = 17;
+
+for(i = entrada; i < saida; i = i + 1){
+    if((i == 12) || (i == 13)){
+        continue;
+    }
+    for(j = 0; j < 60; j = j + minutos){
+        total_entrevistas++;
+        if(j == 0){
+            console.log("Entrevista #", 
+                total_entrevistas, "=>", i+":"+j+"0");
+        }
+        else{
+            console.log("Entrevista #",
+                total_entrevistas, "=>", i+":"+j);
+
+        }
     }
 }
-
-//exemplo
-console.log(primeiraEtapa(18,2));
