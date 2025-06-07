@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabuada Interativa</title>
+</head>
+<body>
+
+    <label for="numero">Digite o número da tabuada:</label>
+    <input type="number" id="numero" name="numero">
+
+    <button onclick="gerarTabuada()">Gerar Tabuada</button>
+
+    <div id="tabuada"></div>
+
+    <script>
+        function gerarTabuada() {
+            const numero = document.getElementById("numero").value;
+            const tabuadaDiv = document.getElementById("tabuada");
+
+            if (!isNaN(numero) && numero > 0) {
+                tabuadaDiv.innerHTML = ""; // Limpa a tabuada anterior
+
+                for (let i = 1; i <= 10; i++) {
+                    const resultado = numero * i;
+                    const linha = `<p>${numero} x ${i} = ${resultado}</p>`;
+                    tabuadaDiv.innerHTML += linha; // Adiciona a linha à div
+                }
+            } else {
+                alert("Por favor, digite um número válido.");
+            }
+        }
+    </script>
+
+</body>
+</html>
