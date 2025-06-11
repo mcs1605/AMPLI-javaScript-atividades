@@ -1,0 +1,14 @@
+body {
+    background-color: ghostwhite;
+}
+
+canvas {
+    border: 1px solid #000;
+    display: block;
+    margin: 20px auto;
+    background-color: rgba(238, 255, 86, 0.05);
+}
+
+h1 {
+    margin: 0 0 0 20%;
+}
